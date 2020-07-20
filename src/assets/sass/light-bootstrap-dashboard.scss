@@ -36,3 +36,19 @@
 @import "lbd/cards";
 @import "lbd/chartist";
 @import "lbd/responsive";
+
+.table-cell {
+  display: table-cell !important;
+}
+
+.table-cell > button {
+  width: 150px;
+}
+
+.table-display {
+  display: table !important;
+}
+
+.display-none {
+  display: none;
+}
