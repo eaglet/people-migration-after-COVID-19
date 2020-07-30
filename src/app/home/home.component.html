@@ -2,17 +2,23 @@
     <div class="container-fluid">
         <div class="row table-display">
             <div class="table-cell">
-                <button class="btn btn-default btn-block" (click)="changeTab('Data1')">Data1</button>
+                <button class="btn btn-default btn-block" (click)="changeTab('Data1')">Flight Path</button>
             </div>
             <div class="table-cell">
-                <button class="btn btn-default btn-block" (click)="changeTab('Data2')">Data2</button>
+                <button class="btn btn-default btn-block" (click)="changeTab('Data2')">Real Estate</button>
+            </div>
+            <div class="table-cell">
+                <button class="btn btn-default btn-block" (click)="changeTab('Data3')">Trips</button>
             </div>
         </div>
         <div [ngClass]="{'display-none' : !displayData1}" class="row">
             <div id="vizContainer" style="display: flex; justify-content: center"></div>
         </div>
         <div [ngClass]="{'display-none' : !displayData2}" class="row">
-            <p>Data2</p>
+            <div id="vizContainer2" style="display: flex; justify-content: center"></div>
+        </div>
+        <div [ngClass]="{'display-none' : !displayData3}" class="row">
+            <div id="vizContainer3" style="display: flex; justify-content: center"></div>
         </div>
     </div>
 </div>
